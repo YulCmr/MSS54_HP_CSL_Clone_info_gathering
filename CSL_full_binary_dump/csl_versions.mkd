@@ -1,0 +1,31 @@
+# CSL software versions
+
+| Release # | Release Date | System | Model | Region 	| Filename | Filename | ZV_1
+| ----------|--------------|--------|-------|--------|-----------|----------|------
+| 7.837.329 | 21-Dec-04 | MSS54HP | E46-M3 CSL | EU3 | A7837329.0DA | PD11 (03.12.04) | E46-M3-CSL-EOBD Vmax unregulated
+| 7.837.331 | 21-Dec-04 | MSS54HP | E46-M3 CSL | EU3 | A7837331.0DA | PD31 (03.12.04) | E46-M3-CSL-EOBD SA231
+| 7.837.333 | 21-Dec-04 | MSS54HP | E46-M3 CSL | EU3 | A7837333.0DA | PD1D (03.12.04) | E46-M3-CSL-SA861 Vmax unregulated **No ODB**
+| 7.837.335 | 21-Dec-04 | MSS54HP | E46-M3 CSL | EU3 | A7837335.0DA | PD3D (03.12.04) | E46-M3-CSL-SA861 SA231 **No ODB**
+| 7.837.337 | 21-Dec-04 | MSS54HP | E46-M3 CSL | EU3 | A7837337.0DA | PD1J (03.12.04) | E46-M3-CSL-Japan Vmax unregulated
+| 7.837.339 | 21-Dec-04 | MSS54HP | E46-M3 CSL | EU3 | A7837339.0DA | PD3J (03.12.04) | E46-M3-CSL-Japan SA231
+
+"Vmax unregulated" are the exact same versions as SA231, but factory unregulated.
+
+SA861 versions doesn't seem to have an ODB interface or Check Engine Light. (To be confirmed) Prefer 331, 329, 339 or 337 versions for a road car
+
+| Release | Corresponding ZB (ZUSB)
+| ------- | ----------------
+| 7.837.329 | ZB 7837328
+| 7.837.331 | ZB 7837330
+| 7.837.333 | ZB 7837332
+| 7.837.335 | ZB 7837334
+| 7.837.337 | ZB 7837336
+| 7.837.339 | ZB 7837338
+
+Dump files :
+VIN is set as WBSBL12345AB12345 and there are no EWS sync data
+
+I would recommend 7.837.329 (ZB7837328 file) for a street car:
+- Euro spec
+- Unregulated
+- Includes ODB features

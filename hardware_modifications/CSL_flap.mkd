@@ -1,0 +1,39 @@
+# CSL Flap
+
+### All credit goes to terraphantm on M3Forum.net
+
+### Genuine MSS54HP_CSL for reference
+
+Modifications listed here are needed for **Both** MSS54 & MSS54HP.
+
+### Top view
+
+![csl_flap](pictures/h_bridge.jpg)
+
+Highlighted in red: H-Bridge
+
+OEM: MC33186DH (Not available)
+
+Replacement: MC33186VW
+```
+Freescale MC33186VW1 x1
+https://eu.mouser.com/ProductDetail/Freescale-Semiconductor/MC33186HVW1/?qs=sGAEpiMZZMtXqW1IUNX6MK22Jp3duPZ9
+```
+
+### Bottom view
+
+![csl_flap2](pictures/h_bridge_2.jpg)
+
+Highlighted in red: Needed capacitors for flap operation
+
+Big capacitor : 15uF 35V (Type D case)
+```
+AVX TPSD156K035R0100 x1
+https://eu.mouser.com/ProductDetail/AVX/TPSD156K035R0100/?qs=%2Fha2pyFadugpjL0%2FQYjEzvDtoZyDW%252beyf3ZjSk0pAyLoU4Sk8%252beatg%3D%3D
+```
+
+2 little capacitors : 100nF 50V 0805
+```
+AVX 581-08055C104J4T2A x2
+https://eu.mouser.com/ProductDetail/AVX/08055C104J4T2A/?qs=sGAEpiMZZMs0AnBnWHyRQKdiqyDPVQdA86qAcnZjToA=
+```

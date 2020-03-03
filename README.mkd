@@ -1,0 +1,5 @@
+### Comprehensive MSS54/MSS54HP to MSS54HP_CSL Conversion
+
+Every information gathered here come from multiple sources: M3Forum.net, M3cutters, E46Fanatics & Github.
+
+This git doesn't describe the easy "mssflash" way, but the cleaner and OEM one.

@@ -1,0 +1,19 @@
+# MAP Sensor
+
+### All credit goes to terraphantm on M3Forum.net
+
+## Only applies to MSS54 (Not HP version)
+
+Hardware modifications are required on the PCB to accept the MAP sensor.
+
+![map_res](pictures/map_resistors.jpg)
+
+You **MUST** change the 2 red resistors :  7.15 kΩ
+
+You can change the 2 yellow but terra says "They don't appear to effect anything" : 10 kΩ on the MSS54HP, 1 kΩ on the non-HP.
+
+Also the onboard pressure sensor is different. (Yellow to righ, MAP/BARO)
+- you can either install one with the same specs as the MSS54HPs (~~MPXA6115A~~ (EOL) or MPXAZ6115A),
+- or you can change the pressure scale (at 0xC476, change "D3 1C" to "C2 5F").
+
+![MSS54](pictures/MSS54_detail.png)

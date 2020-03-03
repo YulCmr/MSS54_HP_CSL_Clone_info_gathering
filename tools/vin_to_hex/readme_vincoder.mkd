@@ -1,0 +1,100 @@
+# Convert VIN to HEX and Vice Versa
+
+All credit goes to p0lar on M3forum.net
+
+## How to use perl script :
+
+Give script execution permission
+```
+chmod 755 vincoder
+```
+Convert Hex to Vin
+```
+./vincoder -b=202dc34e24310404b8c9203048
+20 2D C3 4E 24 31 04 04 B8 C9 20 30 48  -> WBSDE93441BZ98318
+```
+Convert Vin to Hex
+```
+./vincoder -v=WBSDE93441BZ98318
+WBSDE93441BZ98318 -> 20 2D C3 4E 24 31 04 04 B8 C9 20 30 48
+```
+## Some explanation, how does this work ?
+
+Each letter and number is 'mapped' to a corresponding value according to the following table.
+The letters I, O and Q are not permissible in a VIN (ISO 3833).
+
+| Character	| Value	 	| 	Character |	Value	 |	Character	| Value   |
+|-----------|---------|-------------|--------|------------|---------|
+| 0	        | 0	 	    |	C	          | 12	 	 | ~~O~~      |	~~24~~  |
+| 1	        | 1	   	  |	D	          | 13	 	 | P	        | 25      |
+| 2	        | 2	   	  |	E	          | 14	 	 | ~~Q~~      | ~~26~~  |
+| 3	        | 3	   	  |	F	          | 15	 	 | R	        | 27      |
+| 4	        | 4	   	  |	G	          | 16	 	 | S	        | 28      |
+| 5	        | 5	   	  |	H	          | 17	 	 | T	        | 29      |
+| 6	        | 6	   	  |	~~I~~	      | ~~18~~ | U	        | 30      |
+| 7	        | 7	   	  |	J	          | 19	 	 | V	        | 31      |
+| 8	        | 8	   	  |	K	          | 20	 	 | W	        | 32      |
+| 9	        | 9	   	  |	L	          | 21	 	 | X	        | 33      |
+| A	        | 10  	 	|	M           | 22  	 | Y          |	34      |
+| B	        | 11  	 	|	N           | 23   	 | Z          |	35      |
+
+So, let's map the VIN from each individual character to each value using the following somewhat imaginary VIN: WBSDE93441BZ98318
+
+```
+W = 32
+B = 11
+S = 28
+D = 13
+E = 14
+9 =  9
+3 =  3
+4 =  4
+4 =  4
+1 =  1
+B = 11
+Z = 35
+9 =  9
+8 =  8
+3 =  3
+1 =  1
+8 =  8
+```
+
+Now that we know the character to value mappings, let's note the index of each character within the VIN string in reverse order from 16 to 0:
+
+
+| VIN  |  W | B |  S | D | E | 9 | 3 | 4 | 4 | 1 | B | Z | 9 | 8 | 3 | 1 | 8 |
+|------|----|---|-----|--|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| INDEX | 16 |15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
+
+Using the following summation, we calculate and sum each value where x is the mapped value of each character and i is the index with respect to its position within the VIN, to arrive at some very large integers:
+
+```
+W = 32 * 6416 = 2535301200456458802993406410752
+B = 11 * 6415 = 13617340432139183023890366464
+S = 28 * 6414 = 541598767187353870268366848
+D = 13 * 6413 = 3929008913747544817795072
+E = 14 * 6412 = 66113130760175032991744
+9 =  9 * 6411 = 664082786653543858176
+3 =  3 * 6410 = 3458764513820540928
+4 =  4 * 649  = 72057594037927936
+4 =  4 * 648  = 1125899906842624
+1 =  1 * 647  = 4398046511104
+B = 11 * 646  = 755914244096
+Z = 35 * 645  = 37580963840
+9 =  9 * 644  = 150994944
+8 =  8 * 643  = 2097152
+3 =  3 * 642  = 12288
+1 =  1 * 641  = 64
+8 =  8 * 640  = 8
+```
+After summing all these values, we arrive at the following (very) large integer (technically > 264 but < 2128):
+
+```
+2549464135445444587460419924040
+```
+After converting this number to hexadecimal, we arrive at a 13-byte hexadecimal string:
+
+```
+20 2D C3 4E 24 31 04 04 B8 C9 20 30 48
+```

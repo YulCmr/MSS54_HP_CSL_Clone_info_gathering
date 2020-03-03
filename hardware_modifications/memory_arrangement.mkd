@@ -1,0 +1,87 @@
+# Memory Arrangement
+
+## VIN
+
+*TODO : VIN addr & length*
+
+To encode/decode your Vin, see "vin_to_hex" in the "tools" section
+
+## ISN (EWS)
+
+Clear ISN (Allow EWS Alignement) :
+- clear all data in the slave eeprom from 0x3FE4 - 0x7FFF (although data around 5D00 could be retained if required)
+- single word repeated 3 times. Set them to "FFFF"
+
+## Flash Counter
+
+0x4800 : Flash counter on each 512K bank, Must be 120 * 0xFF, 60*16bits. Each flash toggle 0xFFFF to 0x0000
+
+Erase 120 bytes from 0x4800 to reset flash counter (Erase set to 0xFF)
+
+## Full BINARY
+
+### MSS54
+
+![mss54_arrangement](pictures/mss54_arrangement.png)
+
+```
+0x00000 -> 0x03FFF: Boot Sector (16kb, master)
+0x04000 -> 0x05FFF: unknown? (8kb)
+0x06000 -> 0x07FFF: unknown? (8kb)
+0x08000 -> 0x0BFFF: Parameter Space Segment 1 (16kb, master)
+0x0C000 -> 0x0FFFF: blank space (16kb)
+0x10000 -> 0x1FFFF: Program Space Segment 4 (64kb)
+0x20000 -> 0x2FFFF: Program Space Segment 5 (64kb)
+0x30000 -> 0x3FFFF: Program Space Segment 6 (64kb)
+-------------------------------------------------------------
+0x40000 -> 0x43FFF: Boot Sector (16kb, slave)
+0x44000 -> 0x45FFF: unknown? (8kb)
+0x46000 -> 0x47FFF: unknown? (8kb)
+0x48000 -> 0x4BFFF: Parameter Space Segment 2 (16kb, slave)
+0x4C000 -> 0x4FFFF: blank space (16kb)
+0x50000 -> 0x5FFFF: Program Space Segment 1 (64kb)
+0x60000 -> 0x6FFFF: Program Space Segment 2 (64kb)
+0x70000 -> 0x7FFFF: Program Space Segment 3 (64kb)
+```
+ ### MSS54HP/MSS54HP_CSL
+
+![mss54hp_arrangement](pictures/mss54hp_arrangement.png)
+
+```
+0x00000 -> 0x03FFF: Boot Sector (16kb, master)
+0x04000 -> 0x05FFF: unknown? (8kb)
+0x06000 -> 0x07FFF: unknown? (8kb)
+0x08000 -> 0x0FFFF: Parameter Space Segment 1 (32kb, master)
+0x10000 -> 0x1FFFF: Program Space Segment 5 (64kb)
+0x20000 -> 0x2FFFF: Program Space Segment 6 (64kb)
+0x30000 -> 0x3FFFF: Program Space Segment 7 (64kb)
+0x40000 -> 0x4FFFF: Program Space Segment 8 (64kb)
+0x50000 -> 0x5FFFF: Blank (64kb)
+0x60000 -> 0x6FFFF: Blank (64kb)
+0x70000 -> 0x7FFFF: Blank (64kb)
+-------------------------------------------------------------
+0x80000 -> 0x83FFF: Boot Sector (16kb, slave)
+0x84000 -> 0x85FFF: unknown? (8kb)
+0x86000 -> 0x87FFF: unknown? (8kb)
+0x88000 -> 0x8FFFF: Parameter Space Segment 2 (32kb, slave)
+0x90000 -> 0x9FFFF: Program Space Segment 1 (64kb)
+0xA0000 -> 0xAFFFF: Program Space Segment 2 (64kb)
+0xB0000 -> 0xBFFFF: Program Space Segment 3 (64kb)
+0xC0000 -> 0xCFFFF: Program Space Segment 4 (64kb)
+0xD0000 -> 0xDFFFF: Blank (64kb)
+0xE0000 -> 0xEFFFF: Blank (64kb)
+0xF0000 -> 0xFFFFF: Blank (64kb)
+```
+
+Alternatively, on each eeprom:
+
+```
+0x0-0x3FFF is the bootloader
+0x4000-0x4800 is FF.
+0x4800-0x4878(?) is the flash counter.
+0x4878(?)-0x5D11 = FF
+0x5D12 - ~0x8000 = AIF, VIN, possibly EWS and other identifying info
+0x8000-0xFFFF = data section
+0x10000-0x4FFFF = Program
+0x4FFFF-0x7FFFF = FF
+```
