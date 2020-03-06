@@ -43,3 +43,5 @@ You will find SI & SE, when possible prefer **SE** (extended temperature range f
 ### CAUTION
 
 Be carefull when buying eeproms from asia, some seller are reselling fake chips (true for every chip you can buy in Asia, not only these particular eeproms). If you do, always check the authenticity of your eeproms on a programmer before soldering them. It can be everything but eeproms and can permanently damage your ECU.
+
+[Back to main](README.mkd)
