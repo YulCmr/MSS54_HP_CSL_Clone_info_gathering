@@ -104,4 +104,4 @@ Alternatively, on each eeprom:
 0x4FFFF-0x7FFFF = FF
 ```
 
-[Back to main](README.mkd)
+[Back to main](/README.mkd)

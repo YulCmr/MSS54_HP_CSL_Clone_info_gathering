@@ -38,4 +38,4 @@ AVX 581-08055C104J4T2A x2
 https://eu.mouser.com/ProductDetail/AVX/08055C104J4T2A/?qs=sGAEpiMZZMs0AnBnWHyRQKdiqyDPVQdA86qAcnZjToA=
 ```
 
-[Back to main](README.mkd)
+[Back to main](/README.mkd)
