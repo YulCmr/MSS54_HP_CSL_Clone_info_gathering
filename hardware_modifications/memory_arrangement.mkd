@@ -2,15 +2,27 @@
 
 ## VIN
 
-*TODO : VIN addr & length*
 
-To encode/decode your Vin, see "vin_to_hex" in the "tools" section
+- Addr: 0x5d50
+- Size: 13 Bytes
+
+![vin_location](/pictures/vin_bless.png)
+
+Encoded VIN in this example: 20 2D C2 D5 04 20 C4 14 A2 C1 08 31 05
+
+Decoded VIN in this example: WBSBL12345AB12345
+
+To encode/decode your Vin, see "vincoder" at [/tools/vin_to_hex/readme_vincoder.mkd](/tools/vin_to_hex/readme_vincoder.mkd)
 
 ## ISN (EWS)
 
+Bin located in "CSL_full_binary_dump" seem to already have a clear ISN. Don't bother with ISN clearing if you're using a Full bin from this repo.
+
 Clear ISN (Allow EWS Alignement) :
 - clear all data in the slave eeprom from 0x3FE4 - 0x7FFF (although data around 5D00 could be retained if required)
-- single word repeated 3 times. Set them to "FFFF"
+- single word repeated 3 times. Set them to "0xFFFF" (word is 16bits)
+
+**Slave eeprom 0x3EF4-0x7FFFF means 0x43EF4 to 0x47FFF in Full BIN**
 
 ## Flash Counter
 
@@ -22,7 +34,7 @@ Erase 120 bytes from 0x4800 to reset flash counter (Erase set to 0xFF)
 
 ### MSS54
 
-![mss54_arrangement](pictures/mss54_arrangement.png)
+![mss54_arrangement](/pictures/mss54_arrangement.png)
 
 ```
 0x00000 -> 0x03FFF: Boot Sector (16kb, master)
@@ -45,7 +57,7 @@ Erase 120 bytes from 0x4800 to reset flash counter (Erase set to 0xFF)
 ```
  ### MSS54HP/MSS54HP_CSL
 
-![mss54hp_arrangement](pictures/mss54hp_arrangement.png)
+![mss54hp_arrangement](/pictures/mss54hp_arrangement.png)
 
 ```
 0x00000 -> 0x03FFF: Boot Sector (16kb, master)

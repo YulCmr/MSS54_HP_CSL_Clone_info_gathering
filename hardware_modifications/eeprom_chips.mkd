@@ -2,11 +2,11 @@
 
 Each DME has 2 eeproms, one master and one slave. Eeproms are the orange chips noted "RAM/BIOS" down
 
-![MSS54](pictures/MSS54_detail.png)
+![MSS54](/pictures/MSS54_detail.png)
 
 ## MSS54
 
-![AM29F200BB](pictures/AM29F200BB.jpeg)
+![AM29F200BB](/pictures/AM29F200BB.jpeg)
 
 AM29F200BB x 2
 
@@ -16,7 +16,7 @@ For a CSL conversion, you **MUST** change these eeproms, csl binary will **NOT**
 
 ## MSS54HP/MSS54HP_CSL
 
-![AM29F400BB](pictures/AM29F400BB.jpeg)
+![AM29F400BB](/pictures/AM29F400BB.jpeg)
 
 2 * AM29F400BB
 
@@ -32,11 +32,11 @@ OEM are **55-60**
 
 50, 45 are fine. I can't say for 65/75/etc, Try to keep thing OEM or better.
 
-![speed](pictures/eeprom_speeds.png)
+![speed](/pictures/eeprom_speeds.png)
 
 You will find SI & SE, when possible prefer **SE** (extended temperature range for automotive purpose
 
-  ![temp](pictures/eeprom_temps.png)
+  ![temp](/pictures/eeprom_temps.png)
 
 ### CAUTION
 

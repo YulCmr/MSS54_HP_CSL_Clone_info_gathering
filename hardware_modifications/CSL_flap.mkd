@@ -8,7 +8,7 @@ Modifications listed here are needed for **Both** MSS54 & MSS54HP.
 
 ### Top view
 
-![csl_flap](pictures/h_bridge.jpg)
+![csl_flap](/pictures/h_bridge.jpg)
 
 Highlighted in red: H-Bridge
 
@@ -22,7 +22,7 @@ https://eu.mouser.com/ProductDetail/Freescale-Semiconductor/MC33186HVW1/?qs=sGAE
 
 ### Bottom view
 
-![csl_flap2](pictures/h_bridge_2.jpg)
+![csl_flap2](/pictures/h_bridge_2.jpg)
 
 Highlighted in red: Needed capacitors for flap operation
 
