@@ -14,6 +14,8 @@ Decoded VIN in this example: WBSBL12345AB12345
 
 To encode/decode your Vin, see "vincoder" at [/tools/vin_to_hex/readme_vincoder.mkd](/tools/vin_to_hex/readme_vincoder.mkd)
 
+Alternatively you can use [Tool32](https://www.ecuworx.co.uk/2016/02/26/adding-updating-your-vin-uif-with-tool32/) to update you VIN if you only have an ODB2 cable.
+
 ## ISN (EWS)
 
 Bin located in "CSL_full_binary_dump" seem to already have a clear ISN. Don't bother with ISN clearing if you're using a Full bin from this repo.

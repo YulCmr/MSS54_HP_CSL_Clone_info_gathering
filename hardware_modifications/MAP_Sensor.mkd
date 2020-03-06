@@ -14,6 +14,7 @@ You can change the 2 yellow but terra says "They don't appear to effect anything
 
 Also the onboard pressure sensor is different. (Yellow component in the top right corner, MAP/BARO)
 - you can either install one with the same specs as the MSS54HPs (~~MPXA6115A~~ (EOL) or MPXAZ6115A),
-- or you can change the pressure scale (at 0xC476, change "D3 1C" to "C2 5F").
+- or you can change the pressure scale (at 0xC476, change "D3 1C" to "C2 5F") in the data section (Partial binary dump) **Alternatively I would advice you to use Martyn's
+[MSS5x Binary Modification Tool](https://www.ecuworx.co.uk/downloads/) to mod you MAP Sensor'scale.**
 
 ![MSS54](/pictures/MSS54_detail.png)

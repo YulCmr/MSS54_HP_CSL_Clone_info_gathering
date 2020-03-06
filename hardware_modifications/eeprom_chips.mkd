@@ -2,6 +2,8 @@
 
 Each DME has 2 eeproms, one master and one slave. Eeproms are the orange chips noted "RAM/BIOS" down
 
+**MSS54 EEPROM are not big enough to support CSL Software, you need bigger ones found in MSS54HP & MSS54HP_CSL DME**
+
 ![MSS54](/pictures/MSS54_detail.png)
 
 ## MSS54

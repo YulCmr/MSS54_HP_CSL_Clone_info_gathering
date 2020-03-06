@@ -1,5 +1,23 @@
-### Comprehensive MSS54/MSS54HP to MSS54HP_CSL Conversion
+# MSS54/HP to MSS54HP_CSL Conversion & some other bits
 
 Every information gathered here come from multiple sources: M3Forum.net, M3cutters, E46Fanatics & Github.
 
 This git doesn't describe the easy "mssflash" way, but the cleaner and OEM one.
+
+You need a BDM to flash the Full Binary dumps. 
+
+#### CSL Software Versions detail + dump
+
+[CSL software versions & Full binary dumps](/CSL_full_binary_dump/csl_version.mkd)
+
+#### Hardware Modifications
+
+Here are all needed modifications on MSS54 and MSS54HP to achieve a CSL Clone conversion
+
+[[MSS54/HP] modifications to allow CSL Flap operation](/hardware_modifications/CSL_flap.mkd)
+
+[[MSS54] EEPROMs modifications to flash Full Binary](/hardware_modifications/eeprom_chips.mkd)
+
+[[MSS54] MAP Sensor modifications](/hardware_modifications/eeprom_chips.mkd)
+
+[Details about memory arrangement, VIN, ISN/EWS](/hardware_modifications/memory_arrangement.mkd)
