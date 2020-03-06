@@ -12,7 +12,7 @@ Encoded VIN in this example: 20 2D C2 D5 04 20 C4 14 A2 C1 08 31 05
 
 Decoded VIN in this example: WBSBL12345AB12345
 
-To encode/decode your Vin, see "vincoder" at [/tools/vin_to_hex/readme_vincoder.mkd](/tools/vin_to_hex/readme_vincoder.mkd)
+To encode/decode your Vin, see [Vincoder](/tools/vin_to_hex/readme_vincoder.mkd)
 
 Alternatively you can use [Tool32](https://www.ecuworx.co.uk/2016/02/26/adding-updating-your-vin-uif-with-tool32/) to update you VIN if you only have an ODB2 cable.
 
@@ -28,9 +28,13 @@ Clear ISN (Allow EWS Alignement) :
 
 ## Flash Counter
 
-0x4800 : Flash counter on each 512K bank, Must be 120 * 0xFF, 60*16bits. Each flash toggle 0xFFFF to 0x0000
+0x4800 : Flash counter on each 512K bank, Must be 0xFF (or 60 x 16bits). Each flash toggle 0xFFFF to 0x0000
 
-Erase 120 bytes from 0x4800 to reset flash counter (Erase set to 0xFF)
+Erase 120 bytes from 0x4800 to reset flash counter (Erase set to 0xFF) **but** it seems you have to let the first 16bit word at 0x0000, like this :
+
+```
+0x4800 00 00 FF FF FF FF FF FF FF FF ...
+```
 
 ## Full BINARY
 

@@ -18,6 +18,11 @@ Convert Vin to Hex
 ./vincoder -v=WBSDE93441BZ98318
 WBSDE93441BZ98318 -> 20 2D C3 4E 24 31 04 04 B8 C9 20 30 48
 ```
+
+## Download
+
+[vincoder](vincoder)
+
 ## Some explanation, how does this work ?
 
 Each letter and number is 'mapped' to a corresponding value according to the following table.
