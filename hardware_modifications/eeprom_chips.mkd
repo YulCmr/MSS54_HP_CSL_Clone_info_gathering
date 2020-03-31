@@ -36,7 +36,7 @@ OEM are **55-60**
 
 ![speed](/pictures/eeprom_speeds.png)
 
-You will find SI & SE, **Buy SE** (extended temperature range for automotive purpose
+You will find SI & SE, OEM seem to be SE, when possible prefer **SE** (extended temperature range for automotive purpose
 
   ![temp](/pictures/eeprom_temps.png)
 
