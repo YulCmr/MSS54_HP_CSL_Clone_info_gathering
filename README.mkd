@@ -18,6 +18,6 @@ Here are all needed modifications on MSS54 and MSS54HP to achieve a CSL Clone co
 
 [[MSS54] EEPROMs modifications to flash Full Binary](/hardware_modifications/eeprom_chips.mkd)
 
-[[MSS54] MAP Sensor modifications](/hardware_modifications/eeprom_chips.mkd)
+[[MSS54] MAP Sensor modifications](/hardware_modifications/MAP_Sensor.mkd)
 
 [Details about memory arrangement, VIN, ISN/EWS](/hardware_modifications/memory_arrangement.mkd)
