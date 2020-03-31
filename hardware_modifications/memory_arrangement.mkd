@@ -24,7 +24,7 @@ Clear ISN (Allow EWS Alignement) :
 - clear all data in the slave eeprom from 0x3FE4 - 0x7FFF (although data around 5D00 could be retained if required)
 - single word repeated 3 times. Set them to "0xFFFF" (word is 16bits)
 
-**Slave eeprom 0x3EF4-0x7FFFF means 0x43EF4 to 0x47FFF in Full BIN**
+**Slave eeprom 0x3EF4-0x7FFFF means, 0x43EF4 to 0x47FFF in NON-HP Full BIN, 0x83EF4 to 0x87FFF in HP Full BIN**
 
 ## Flash Counter
 
