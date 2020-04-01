@@ -1,18 +1,18 @@
 # Memory Arrangement
 
-## Some important things when converting MSS54 to MSS54HP_CSL
+## Some important things when converting MSS54/HP to MSS54HP_CSL
 
-If you plan to use your newly MSS54 converted DME with a stock S54 with stock (non-CSL) camshafts , you have some things to set right before:
 
-- **VANOS offsets:** at 0x1802 change "00 1E" to "FF EC", at 0x1BB6 change "FF EC" to "00 0A"
+
+- **[MSS54/HP] VANOS offsets:** at 0x1802 change "00 1E" to "FF EC", at 0x1BB6 change "FF EC" to "00 0A"
   - This is applicable only if running stock cams. This is not required if running CSL cams and will be incorrect if running any other type of cams.
 
 
-- **Pressure scaling:** at 0xC476 change "D3 1C" to "C2 5F"
-  - MSS54s have a different barometric pressure sensor than HPs, this changes the sensor's scaling to have the CSL software work correctly with the non-HP sensor. (More details on the [[MSS54] MAP Sensor modifications](/hardware_modifications/MAP_Sensor.mkd) section, some hardware modifications are required)
+- **[MSS54 only] Pressure scaling:** at 0xC476 change "D3 1C" to "C2 5F"
+  - MSS54 have a different barometric pressure sensor than HPs, this changes the sensor's scaling to have the CSL software work correctly with the non-HP sensor. (More details on the [[MSS54] MAP Sensor modifications](/hardware_modifications/MAP_Sensor.mkd) section, some hardware modifications are required)
 
 
-- **Suppress injector error 151:** search for 97282803020203000102032801 and zero out the full string.
+- **[MSS54 only] Suppress injector error 151:** search for 97282803020203000102032801 and zero out the full string.
     - There is a hardware injector driver difference between non-HP and HP DMEs, meaning that this conversion will result in an injector driver error. However, these drivers still work fine, so suppressing the error is necessary if you don't want to have it listed constantly.
 
 
