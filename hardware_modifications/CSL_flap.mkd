@@ -20,6 +20,8 @@ Freescale MC33186VW1 x1
 https://eu.mouser.com/ProductDetail/Freescale-Semiconductor/MC33186HVW1/?qs=sGAEpiMZZMtXqW1IUNX6MK22Jp3duPZ9
 ```
 
+It seems Bosch 30348 can be used too.
+
 ### Bottom view
 
 ![csl_flap2](/pictures/h_bridge_2.jpg)
