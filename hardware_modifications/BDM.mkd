@@ -1,0 +1,27 @@
+# BDM Documentation
+
+## Master/Slave arrangement
+
+![DME_Detail](/pictures/DME_Detail.jpg)
+
+## BDM Connector
+
+![BDM_connector](/pictures/BDM_connector.jpg)
+
+
+| Pin Number | Pin name     | Description                   | Tap's BDM assignment  |
+|------------|--------------|-------------------------------|-----------------------|
+| 1          | DS ?         | None                          | NC                    |
+| 2          | PIN_BERR     | Bus Error                     | PTB11                 |
+| 3          | GND          | Ground                        | GND                   |
+| 4          | PIN_BKPT     | Breakpoint, Serial Clock      | PTE5                  |
+| 5          | GND          | Ground                        | ~~PTB1~~              |
+| 6          | PIN_FREEZE   | freeze signal                 | PTB10                 |
+| 7          | PIN_RESET    | reset                         | PTE4                  |
+| 8          | PIN_DSI      | data input (to ECU) signal    | PTE3                  |
+| 9          | PIN_PWR      | power supply                  | PTB0                  |
+| 10         | PIN_DSO      | data output (from ECU) signal | PTE2                  |
+
+## Mbed BDM Project
+
+Working on it ... 

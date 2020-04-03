@@ -21,3 +21,5 @@ Here are all needed modifications on MSS54 and MSS54HP to achieve a CSL Clone co
 [[MSS54] MAP Sensor modifications](/hardware_modifications/MAP_Sensor.mkd)
 
 [Details about memory arrangement, VIN, ISN/EWS](/hardware_modifications/memory_arrangement.mkd)
+
+[BDM pinout - Master/Slave configuration](/hardware_modifications/BDM.mkd)
