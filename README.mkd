@@ -4,7 +4,9 @@ Every information gathered here come from multiple sources: M3Forum.net, M3cutte
 
 This git doesn't describe the easy "mssflash" way, but the cleaner and OEM one.
 
-You need a BDM to flash the Full Binary dumps.
+You need a BDM to flash the Full Binary dumps (Bootloader included).
+
+If you want to participate, contact me on Discord : Yul#0655
 
 #### CSL Software Versions detail + dump
 
