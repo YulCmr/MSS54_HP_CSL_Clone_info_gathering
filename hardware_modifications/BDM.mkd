@@ -37,3 +37,21 @@ Only 5 signals are really usefull.
 | 7          | PIN_RESET    | reset                         | PA_8                              |
 | 8          | PIN_DSI      | data input (to ECU) signal    | PB_5                              |
 | 10         | PIN_DSO      | data output (from ECU) signal | PB_3                              |
+
+## Current progress
+
+**Code is written and functionnal**
+
+### PCB
+
+Every parts are ordered.
+
+29 april 2020 : PCB received
+
+![pre-proto](/pictures/pre_proto.jpg)
+
+### GUI
+
+Windows GUI development is over
+
+![pre-proto](/pictures/gui.jpg)
