@@ -54,4 +54,4 @@ Every parts are ordered.
 
 Windows GUI development is over
 
-![pre-proto](/pictures/gui.jpg)
+![pre-proto](/pictures/windows_gui.jpg)
