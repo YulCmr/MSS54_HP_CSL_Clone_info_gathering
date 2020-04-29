@@ -22,42 +22,18 @@
 | 9          | PIN_PWR      | power supply                  | PTB0                  |
 | 10         | PIN_DSO      | data output (from ECU) signal | PTE2                  |
 
-## Mbed BDM Project
+## STM32 BDM Project
 
-Based on STMicro NUCLEO-L152RE (Mbed OS 5 Compatible)
+**BDM STM32L031K6**
 
-m3fbdm Fork from eacmen (Doesn't respond on Git, paused development)
+Only 5 signals are really usefull.
 
-![BDM_connector](/pictures/BDM_STM_PINOUT.jpg)
-
-**BDM MASTER**
-
-| Pin Number | Pin name     | Description                   | ST BDM assignment     |
-|------------|--------------|-------------------------------|-----------------------|
-| 1          | DS ?         | None                          | NC                    |
-| 2          | PIN_BERR     | Bus Error                     | PA_10                 |
-| 3          | GND          | Ground                        | GND                   |
-| 4          | PIN_BKPT     | Breakpoint, Serial Clock      | PB_3                  |
-| 5          | GND          | Ground                        | GND                   |
-| 6          | PIN_FREEZE   | freeze signal                 | PB_5                  |
-| 7          | PIN_RESET    | reset                         | PB_4                  |
-| 8          | PIN_DSI      | data input (to ECU) signal    | PB_10                 |
-| 9          | PIN_PWR      | power supply                  | PA_8                  |
-| 10         | PIN_DSO      | data output (from ECU) signal | PA_9                  |
-
-**BDM SLAVE**
-
-| Pin Number | Pin name     | Description                   | ST BDM assignment     |
-|------------|--------------|-------------------------------|-----------------------|
-| 1          | DS ?         | None                          | NC                    |
-| 2          | PIN_BERR     | Bus Error                     | PC_4                  |
-| 3          | GND          | Ground                        | GND                   |
-| 4          | PIN_BKPT     | Breakpoint, Serial Clock      | PB_13                 |
-| 5          | GND          | Ground                        | GND                   |
-| 6          | PIN_FREEZE   | freeze signal                 | PB_14                 |
-| 7          | PIN_RESET    | reset                         | PB_15                 |
-| 8          | PIN_DSI      | data input (to ECU) signal    | PB_1                  |
-| 9          | PIN_PWR      | power supply                  | PB_2                  |
-| 10         | PIN_DSO      | data output (from ECU) signal | PB_11                 |
-
-More to come later, still working on it ...
+| Pin Number | Pin name     | Description                   | ST BDM assignment                 |
+|------------|--------------|-------------------------------|-----------------------------------|
+| 3          | GND          | Ground                        | GND                               |
+| 9          | PIN_PWR      | power supply                  | VIN (used to supply power to MCU) |
+| 4          | PIN_BKPT     | Serial Clock                  | PB_10                             |
+| 6          | PIN_FREEZE   | freeze signal                 | PB_4                              |
+| 7          | PIN_RESET    | reset                         | PA_8                              |
+| 8          | PIN_DSI      | data input (to ECU) signal    | PB_5                              |
+| 10         | PIN_DSO      | data output (from ECU) signal | PB_3                              |
