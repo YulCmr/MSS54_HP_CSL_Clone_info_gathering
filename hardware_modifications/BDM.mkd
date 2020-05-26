@@ -44,14 +44,28 @@ Only 5 signals are really usefull.
 
 ### PCB
 
-Every parts are ordered.
-
 29 april 2020 : PCB received
 
 ![pre-proto](/pictures/pre_proto.jpg)
+
+26 may 2020 : Ribbon cables and connector received
+
+![pre-proto_2](/pictures/pre_proto_2.jpg)
 
 ### GUI
 
 Windows GUI development is over
 
 ![pre-proto](/pictures/windows_gui.jpg)
+
+### Pre sale tests
+
+To come ... Test on actual DME. If software conversion is successful, fist unit will be sent to Germany to a known customer. If everything is successful, BDM will be available for sale, firstly on M3Cutters.com.
+
+#### First DME
+
+TODO
+
+#### German Customer DME
+
+TODO
