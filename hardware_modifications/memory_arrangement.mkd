@@ -15,9 +15,10 @@
 - **[MSS54 only] Suppress injector error 151:** search for 97282803020203000102032801 and zero out the full string.
     - There is a hardware injector driver difference between non-HP and HP DMEs, meaning that this conversion will result in an injector driver error. However, these drivers still work fine, so suppressing the error is necessary if you don't want to have it listed constantly.
 
+In addition you can enable cruise control and you need Disable flap if you don't plan to use it.
 
 I strongly recommend you to use Martyn's
-    [MSS5x Binary Modification Tool](https://www.ecuworx.co.uk/downloads/) for general partial bin editing, but afaik, there's still no option to edit Vanos offset. You will have to edit it with a Hex editor.
+    [MSS5x Binary Modification Tool](https://www.ecuworx.co.uk/downloads/) for general partial bin editing, but afaik, there's still no option to edit Vanos offset. You will have to edit it with a Hex editor or tunerpro.
 
 
 ## VIN

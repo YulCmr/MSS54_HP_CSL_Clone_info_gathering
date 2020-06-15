@@ -1,0 +1,27 @@
+## Needed parts
+
+You can mount a GM 1 bar MAP sensor or use a Bosch OEM spec sensor (Not a Stock OEM CSL sensor)
+
+**OEM Spec BOSCH map sensor : 0 261 230 101**
+
+![MAP](/pictures/MAP.jpg)
+
+**Matching connector : 1 928 403 966 (can be found pre-wired on ebay)**
+
+![MAP2](/pictures/MAP_2.jpg)
+
+**Rubber boot : 1 928 300 527**
+
+![MAP3](/pictures/MAP_3.jpg)
+
+Tee for Brake booster vaccum line : used a Gardena 07314-20 kit (2xT of 12-6-12mm, can be shared with someone)
+
+![Tee](/pictures/gardena.jpg)
+
+## Wiring
+
+TODO
+
+## Install
+
+TODO

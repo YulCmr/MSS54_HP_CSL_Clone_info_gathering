@@ -12,7 +12,7 @@ If you want to participate, contact me on Instragram @yulcmr
 
 [CSL software versions & Full binary dumps](/CSL_full_binary_dump/csl_versions.mkd)
 
-#### Hardware Modifications
+#### DME Hardware Modifications
 
 Here are all needed modifications on MSS54 and MSS54HP to achieve a CSL Clone conversion
 
@@ -24,4 +24,20 @@ Here are all needed modifications on MSS54 and MSS54HP to achieve a CSL Clone co
 
 [Details about memory arrangement, VIN, ISN/EWS](/hardware_modifications/memory_arrangement.mkd)
 
-[BDM pinout - Master/Slave configuration](/hardware_modifications/BDM.mkd)
+#### BDM Project
+
+This part is dedicated to my BDM project. I needed to flash complete CSL Software into a DME to convert the DME into a 32500 Unit, not a weird 32300 with CSL software.
+
+[BDM project - Details, Software, etc](/hardware_modifications/BDM.mkd)
+
+#### Sensor Mounting & Wiring
+
+[MAP Sensor](/hardware_modifications/MAP_mounting.mkd)
+
+[IAT Sensor](/hardware_modifications/IAT_mounting.mkd)
+
+#### Owner Manuals
+
+[M3 coupe](/docs/BMW-E46-Pre-LCI-M3-Coupe-owners-manual.pdf)
+
+[M3 Convertible](/docs/BMW-E46-LCI-M3-Convertible-owners-manual.pdf)

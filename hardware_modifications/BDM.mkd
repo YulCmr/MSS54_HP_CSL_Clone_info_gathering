@@ -64,8 +64,8 @@ To come ... Test on actual DME. If software conversion is successful, fist unit 
 
 #### First DME
 
-TODO
+13 june 2020 : Test is a success. Did fix some minor things on embedded software and GUI.
 
 #### German Customer DME
 
-TODO
+13 june 2020 : Ordered missing parts. Shipping should follow.

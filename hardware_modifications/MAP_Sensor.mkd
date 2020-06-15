@@ -1,8 +1,10 @@
 # MAP Sensor
 
-### All credit goes to terraphantm on M3Forum.net
+## Dme modifications
 
-## Only applies to MSS54 (Not HP version)
+All credit goes to terraphantm on M3Forum.net
+
+**Only applies to MSS54 (Not HP version)**
 
 Hardware modifications are required on the PCB to accept the MAP sensor.
 
