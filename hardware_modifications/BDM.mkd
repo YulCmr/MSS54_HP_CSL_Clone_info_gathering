@@ -58,6 +58,7 @@ Windows GUI development is over
 
 ![pre-proto](/pictures/windows_gui.jpg)
 
+
 ### Pre sale tests
 
 To come ... Test on actual DME. If software conversion is successful, fist unit will be sent to Germany to a known customer. If everything is successful, BDM will be available for sale, firstly on M3Cutters.com.
@@ -69,3 +70,9 @@ To come ... Test on actual DME. If software conversion is successful, fist unit 
 #### German Customer DME
 
 13 june 2020 : Ordered missing parts. Shipping should follow.
+
+#### Buyers' Ressources
+
+[Download BDM Utility](/tools/BDM_UTILITY.exe) (Windows 7/8/10)
+
+[Download BDM Drivers](/tools/en.stsw-link009.zip) (ST Virtual COM Port Drivers)
