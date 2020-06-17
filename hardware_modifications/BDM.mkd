@@ -48,7 +48,7 @@ You need to download the windows GUI + the ST Virtual Com Port drivers :
 
 Don't forget, you need to erase and write you binary twice, once per side, Master & Slave.
 
-Plug ribbon cable as following :
+Plug ribbon cable as follows :
 
 ![DME_Detail](/pictures/DME_Detail.jpg)
 
