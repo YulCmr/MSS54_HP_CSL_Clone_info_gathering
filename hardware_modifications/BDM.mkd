@@ -54,10 +54,18 @@ Plug ribbon cable as follows :
 
 Everything is described in the software.
 
-If you face some issue while writing on or reading from your DME (unknown error), it can be a problem between windows and drivers. To resolve this, a feature has been added : **slow mode**. It will change the COM baudrate from 921600 to 115200. Don't worry, transfer speeds are really close from normal mode.
+If you face some issue while writing on or reading from your DME (unknown error), it can be a problem between windows and drivers. To resolve this, a feature has been added : **slow mode**. It will change the COM baudrate from 921600 to 115200.
 
 When you change mode in Windows application, you need to change mode on BDM accordingly.
 
 | Normal Mode (921600) | Slow Mode (115200) |
 |----------------------|--------------------|
 | ![normal mode](/pictures/921600.jpg) | ![slow mode](/pictures/115200.jpg) |
+
+### Flashing durations
+
+| Operation | Normal Mode | Slow Mode |
+|-----------|-------------|-----------|
+| Write     | 2:45s       | 3:20s     |
+| Dump      | 1:20s       | 4:00s     |
+| Erase     | 00:05s      | 0:05s     |
