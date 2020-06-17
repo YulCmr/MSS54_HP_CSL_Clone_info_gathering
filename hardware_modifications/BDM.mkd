@@ -1,7 +1,7 @@
 # BDM Documentation
 
 Buyers section :
-[Go to Software and guides](###Buyers'-Ressources) (Windows 7/8/10)
+[Go to Software and guides](###Buyers-Ressources) (Windows 7/8/10)
 
 ## BDM Connector
 
@@ -34,7 +34,7 @@ Windows GUI development is over
 
 ![pre-proto](/pictures/windows_gui.jpg)
 
-### Buyers' Ressources
+### Buyers Ressources
 
 #### Installation
 
