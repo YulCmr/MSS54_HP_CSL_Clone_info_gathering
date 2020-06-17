@@ -3,13 +3,11 @@
 Buyers section :
 [Go to Software and guides](#Buyers-Ressources) (Windows 7/8/10)
 
-## BDM Connector
+### BDM Connector
 
 ![BDM_connector](/pictures/BDM_connector.jpg)
 
-## STM32 BDM Project
-
-**BDM STM32L031K6**
+### STM32 BDM Project
 
 Only 5 signals are really usefull.
 
@@ -34,9 +32,9 @@ Windows GUI development is over
 
 ![pre-proto](/pictures/windows_gui.jpg)
 
-### Buyers Ressources
+## Buyers Ressources
 
-#### Installation
+### Installation
 
 You need to download the windows GUI + the ST Virtual Com Port drivers :
 
@@ -52,7 +50,7 @@ Plug ribbon cable as follows :
 
 ![DME_Detail](/pictures/DME_Detail.jpg)
 
-#### How to
+### How to
 
 Everything is described in the software.
 
