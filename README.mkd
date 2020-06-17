@@ -8,7 +8,7 @@ You need a BDM to flash a Full Binary dump (Bootloader included).
 
 If you want to participate or look for more informations, you can join the [Discord Server](https://discord.gg/yFSxMxN)
 
-If you want to contact me, you can reach me on Discord or on Instragram @yulcmr
+If you want to contact me, you can reach me on Discord or on Instragram @yulcmr. I'm also reachable on M3Cutters forum.
 
 #### CSL Software Versions detail + dump
 
@@ -33,6 +33,8 @@ This part is dedicated to my BDM project. I needed to flash complete CSL Softwar
 You can find here everything you need to use my BDM : infos, software, drivers, etc.
 
 [BDM project - Details, Software, etc](/hardware_modifications/BDM.mkd)
+
+BDM is for sale at 120 euros + shipping
 
 #### Sensor Mounting & Wiring
 
