@@ -1,26 +1,11 @@
 # BDM Documentation
 
-## Master/Slave arrangement
-
-![DME_Detail](/pictures/DME_Detail.jpg)
+Buyers section :
+[Go to Software and guides](#Buyers'-Ressources) (Windows 7/8/10)
 
 ## BDM Connector
 
 ![BDM_connector](/pictures/BDM_connector.jpg)
-
-
-| Pin Number | Pin name     | Description                   | Tap's BDM assignment  |
-|------------|--------------|-------------------------------|-----------------------|
-| 1          | DS ?         | None                          | NC                    |
-| 2          | PIN_BERR     | Bus Error                     | PTB11                 |
-| 3          | GND          | Ground                        | GND                   |
-| 4          | PIN_BKPT     | Breakpoint, Serial Clock      | PTE5                  |
-| 5          | GND          | Ground                        | ~~PTB1~~              |
-| 6          | PIN_FREEZE   | freeze signal                 | PTB10                 |
-| 7          | PIN_RESET    | reset                         | PTE4                  |
-| 8          | PIN_DSI      | data input (to ECU) signal    | PTE3                  |
-| 9          | PIN_PWR      | power supply                  | PTB0                  |
-| 10         | PIN_DSO      | data output (from ECU) signal | PTE2                  |
 
 ## STM32 BDM Project
 
@@ -38,17 +23,8 @@ Only 5 signals are really usefull.
 | 8          | PIN_DSI      | data input (to ECU) signal    | PB_5                              |
 | 10         | PIN_DSO      | data output (from ECU) signal | PB_3                              |
 
-## Current progress
-
-**Code is written and functionnal**
 
 ### PCB
-
-29 april 2020 : PCB received
-
-![pre-proto](/pictures/pre_proto.jpg)
-
-26 may 2020 : Ribbon cables and connector received
 
 ![pre-proto_2](/pictures/pre_proto_2.jpg)
 
@@ -58,21 +34,32 @@ Windows GUI development is over
 
 ![pre-proto](/pictures/windows_gui.jpg)
 
+### Buyers' Ressources
 
-### Pre sale tests
+#### Installation
 
-To come ... Test on actual DME. If software conversion is successful, fist unit will be sent to Germany to a known customer. If everything is successful, BDM will be available for sale, firstly on M3Cutters.com.
-
-#### First DME
-
-13 june 2020 : Test is a success. Did fix some minor things on embedded software and GUI.
-
-#### German Customer DME
-
-13 june 2020 : Ordered missing parts. Shipping should follow.
-
-#### Buyers' Ressources
+You need to download the windows GUI + the ST Virtual Com Port drivers :
 
 [Download BDM Utility](/tools/BDM_UTILITY.exe) (Windows 7/8/10)
 
 [Download BDM Drivers](/tools/en.stsw-link009.zip) (ST Virtual COM Port Drivers)
+
+### DME Connection
+
+Don't forget, you need to erase and write you binary twice, once per side, Master & Slave.
+
+Plug ribbon cable as following :
+
+![DME_Detail](/pictures/DME_Detail.jpg)
+
+#### How to
+
+Everything is described in the software.
+
+If you face some issue while writing on or reading from your DME (unknown error), it can be a problem between windows and drivers. To resolve this, a feature has been added : **slow mode**. It will change the COM baudrate from 921600 to 115200. Don't worry, transfer speeds are really close from normal mode.
+
+When you change mode in Windows application, you need to change mode on BDM accordingly.
+
+| Normal Mode (921600) | Slow Mode (115200) |
+|----------------------|--------------------|
+| ![normal mode](/pictures/921600.jpg) | ![slow mode](/pictures/115200.jpg) |

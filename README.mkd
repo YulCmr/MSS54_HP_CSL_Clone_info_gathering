@@ -4,9 +4,11 @@ Every information gathered here come from multiple sources: M3Forum.net, M3cutte
 
 This git doesn't describe the easy "mssflash" way, but the cleaner and OEM one.
 
-You need a BDM to flash the Full Binary dumps (Bootloader included).
+You need a BDM to flash a Full Binary dump (Bootloader included).
 
-If you want to participate, contact me on Instragram @yulcmr
+If you want to participate or look for more informations, you can join the [Discord Server](https://discord.gg/yFSxMxN)
+
+If you want to contact me, you can reach me on Discord or on Instragram @yulcmr
 
 #### CSL Software Versions detail + dump
 
@@ -27,6 +29,8 @@ Here are all needed modifications on MSS54 and MSS54HP to achieve a CSL Clone co
 #### BDM Project
 
 This part is dedicated to my BDM project. I needed to flash complete CSL Software into a DME to convert the DME into a 32500 Unit, not a weird 32300 with CSL software.
+
+You can find here everything you need to use my BDM : infos, software, drivers, etc.
 
 [BDM project - Details, Software, etc](/hardware_modifications/BDM.mkd)
 
