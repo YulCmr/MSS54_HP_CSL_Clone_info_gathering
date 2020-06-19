@@ -38,7 +38,7 @@ BDM is for sale at 120 euros + shipping
 
 #### Sensor Mounting & Wiring
 
-[MAP Sensor](/mounting/MAP_mounting.mkd)
+[MAP Sensor](/mounting/Map_mounting.mkd)
 
 [IAT Sensor](/mounting/IAT_mounting.mkd)
 
