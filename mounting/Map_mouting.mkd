@@ -6,6 +6,8 @@ You can mount a GM 1 bar MAP sensor or use a Bosch OEM spec sensor (Not a Stock 
 
 ![MAP](/pictures/MAP.jpg)
 
+![MAP](/pictures/bosch_map.jpg)
+
 **Matching connector : 1 928 403 966 (can be found pre-wired on ebay)**
 
 ![MAP2](/pictures/MAP_2.jpg)
