@@ -42,6 +42,20 @@ You need to download the windows GUI + the ST Virtual Com Port drivers :
 
 [Download BDM Drivers](/tools/en.stsw-link009.zip) (ST Virtual COM Port Drivers)
 
+### DME Power supply
+
+DME supplies power to BDM tool through ribbon cable. You need to supply 12V to your DME.
+
+If you only wants to flash binaries using BDM, do as follows :
+
+![pinout](/pictures/pinout_bdm.png)
+
+Grounds are **common**, you only need to wire one of them.
+
+If you want to be able to use your CAN K-line cable to use INPA or ecuworx or another software, you will need to add 2 additional 12V power supplies (to be confirmed) and the k-line pin as follows :
+
+![pinout](/pictures/pinout_kline.png)
+
 ### DME Connection
 
 Don't forget, you need to erase and write you binary twice, once per side, Master & Slave.
@@ -49,6 +63,8 @@ Don't forget, you need to erase and write you binary twice, once per side, Maste
 Plug ribbon cable as follows :
 
 ![DME_Detail](/pictures/DME_Detail.jpg)
+
+Grounds are **common**, you only need to wire one of them.
 
 ### How to
 
