@@ -42,6 +42,8 @@ You need to download the windows GUI + the ST Virtual Com Port drivers :
 
 [Download BDM Drivers](/tools/en.stsw-link009.zip) (ST Virtual COM Port Drivers)
 
+[VIN Changer](/tools/VIN_UTILITY.exe) (See VIN section in [memory arrangement](/hardware_modifications/memory_arrangement.mkd) to get some details)
+
 ### DME Power supply
 
 DME supplies power to BDM tool through ribbon cable. You need to supply 12V to your DME.

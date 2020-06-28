@@ -32,9 +32,14 @@ Encoded VIN in this example: 20 2D C2 D5 04 20 C4 14 A2 C1 08 31 05
 
 Decoded VIN in this example: WBSBL12345AB12345
 
-To encode/decode your Vin, see [Vincoder](/tools/vin_to_hex/readme_vincoder.mkd)
+How to :
 
-Alternatively you can use [Tool32](https://www.ecuworx.co.uk/2016/02/26/adding-updating-your-vin-uif-with-tool32/) to update you VIN if you only have an ODB2 cable.
+1. **NEW** You can use my windows tool, [VIN Changer](/tools/VIN_UTILITY.exe), no need to know how to execute pearl script. Just open your binary file, write your VIN, double check, then you're all good ! (Only changes VIN in a Binary file. Can be used with a pre-prepared binary file in [csl versions](/tools/CSL_full_binary_dump/csl_versions.mkd) section then flash it using a BDM)
+![vin_location](/pictures/VIN_Changer.jpg)
+
+2. To encode/decode your Vin, see [Vincoder](/tools/vin_to_hex/readme_vincoder.mkd) (Only gives you a hex VIN to manually write in a binary file)
+
+3. Alternatively you can use [Tool32](https://www.ecuworx.co.uk/2016/02/26/adding-updating-your-vin-uif-with-tool32/) to update you VIN with an ODB Cable.
 
 ## ISN (EWS)
 

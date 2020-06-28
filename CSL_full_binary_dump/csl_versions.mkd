@@ -30,4 +30,13 @@ I would recommend 7.837.329 (ZB7837328 file) for a street car:
 - Unregulated
 - Includes ODB features
 
+I'll be uploading here some version based on ZB7837328 file :
+- VMAX Unregulated + Cruise Control enabled
+- VMAX Unregulated + Cruise Control enabled + Stock M3 (non CSL) camshafts
+- VMAX Unregulated + Cruise Control enabled + Stock M3 (non CSL) camshafts + Manual transmission
+- VMAX Unregulated + Cruise Control enabled + Stock M3 (non CSL) camshafts + Manual transmission + 4.10 final ratio
+- VMAX Unregulated + Cruise Control enabled + Stock M3 (non CSL) camshafts + Manual transmission + 4.10 final ratio + etc...
+
+All you will have to do is write your VIN into theses files. To write your VIN in theses files refer to the VIN section in [memory arrangement](/hardware_modifications/memory_arrangement.mkd)
+
 [Back to main](/README.mkd)
