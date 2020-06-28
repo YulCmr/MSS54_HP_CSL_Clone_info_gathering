@@ -34,7 +34,7 @@ Decoded VIN in this example: WBSBL12345AB12345
 
 How to :
 
-1. **NEW** You can use my windows tool, [VIN Changer](/tools/VIN_UTILITY.exe), no need to know how to execute pearl script. Just open your binary file, write your VIN, double check, then you're all good ! (Only changes VIN in a Binary file. Can be used with a pre-prepared binary file in [csl versions](/tools/CSL_full_binary_dump/csl_versions.mkd) section then flash it using a BDM)
+1. **NEW** You can use my windows tool, [VIN Changer](/tools/VIN_UTILITY.exe), no need to know how to execute pearl script. Just open your binary file, write your VIN, double check, then you're all good ! (Only changes VIN in a Binary file. Can be used with a pre-prepared binary file in [csl versions](/CSL_full_binary_dump/csl_versions.mkd) section then flash it using a BDM)
 - ![vin_location](/pictures/VIN_Changer.jpg)
 
 2. To encode/decode your Vin, see [Vincoder](/tools/vin_to_hex/readme_vincoder.mkd) (Only gives you a hex VIN to manually write in a binary file)
