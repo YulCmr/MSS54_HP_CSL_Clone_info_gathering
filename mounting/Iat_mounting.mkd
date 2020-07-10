@@ -1,0 +1,15 @@
+## Needed parts
+
+**OEM part number : 13 621 739 510**
+
+![IAT](/pictures/IAT_1.jpg)
+
+French supplier : https://www.piecesauto24.com/febi-bilstein/7106170
+
+**Matching connector : 12 521 427 615**
+
+![IAT](/pictures/IAT_2.jpg)
+
+**Rubber boot : 12 521 732 635**
+
+![IAT](/pictures/IAT_3.jpg)
