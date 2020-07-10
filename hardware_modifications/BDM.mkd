@@ -40,6 +40,8 @@ You need to download the windows GUI + the ST Virtual Com Port drivers :
 
 [Download BDM Utility](/tools/BDM_UTILITY.exe) (Windows 7/8/10)
 
+[Download BDM Utility (test revision only)](/tools/BDM_UTILITY_test_fix.exe) (Windows 7/8/10)
+
 [Download BDM Drivers](/tools/en.stsw-link009.zip) (ST Virtual COM Port Drivers)
 
 [VIN Changer](/tools/VIN_UTILITY.exe) (See VIN section in [memory arrangement](/hardware_modifications/memory_arrangement.mkd) to get some details)
