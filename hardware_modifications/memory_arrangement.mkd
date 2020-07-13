@@ -20,6 +20,19 @@ In addition you can enable cruise control and you need Disable flap if you don't
 I strongly recommend you to use Martyn's
     [MSS5x Binary Modification Tool](https://www.ecuworx.co.uk/downloads/) for general partial bin editing, but afaik, there's still no option to edit Vanos offset. You will have to edit it with a Hex editor or tunerpro.
 
+## CPU Clock settings
+
+MSS54 is configured at 20MHz :
+
+![20M](/pictures/20M.gif)
+
+
+
+MSS54HP/CSL are configured at 25MHz :
+
+![25M](/pictures/25M.gif)
+
+CPU are identical. Clock is set in software.
 
 ## VIN
 
