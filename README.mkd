@@ -6,9 +6,7 @@ This git doesn't describe the easy "mssflash" way, but the cleaner and OEM one.
 
 You need a BDM to flash a Full Binary dump (Bootloader included).
 
-If you want to participate or look for more informations, you can join the [Discord Server](https://discord.gg/yFSxMxN)
-
-If you want to contact me, you can reach me on Discord or on Instragram @yulcmr. I'm also reachable on M3Cutters forum.
+If you want to contact me, you can reach me on Instragram @yulcmr. I'm also reachable on M3Cutters forum and E46Fanatics
 
 #### CSL Software Versions detail + dump
 
