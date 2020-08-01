@@ -128,12 +128,13 @@ Flashing !
 5. NOW WAIT ! Write process is about 2mn45sec long. Find a beer. When done, "Enable BDM Mode" should turn red.
 6. Disconnect the BDM tool from the Master side
 7. Connect the BDM Tool to the slave side
-8. Hit "**Erase Memory**" button then wait. after ~5sec "Enable BDM Mode" should turn red.
-9. Hit "**Enable BDM Mode**" again and wait for it to turn green.
-10. Select the "**slave**" side on the right of the screen
-11. Hit "**Write Memory**" button. A window should ask for your binary file. Choose your file then "OK".
-12. NOW WAIT ! Write process is about 2mn45sec long. Finish your beer. When done, "Enable BDM Mode" should turn red.
-13. Disconnect the BDM tool from the Slave side
+8. Hit "**Enable BDM Mode**" and wait for it to turn green.
+9. Hit "**Erase Memory**" button then wait. after ~5sec "Enable BDM Mode" should turn red.
+10. Hit "**Enable BDM Mode**" again and wait for it to turn green.
+11. Select the "**slave**" side on the right of the screen
+12. Hit "**Write Memory**" button. A window should ask for your binary file. Choose your file then "OK".
+13. NOW WAIT ! Write process is about 2mn45sec long. Finish your beer. When done, "Enable BDM Mode" should turn red.
+14. Disconnect the BDM tool from the Slave side
 
 **TURN OFF YOUR 12V Power Supply**
 
