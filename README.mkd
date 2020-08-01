@@ -10,7 +10,7 @@ After heavily researching for infos all over internet and digging into old motor
 
 #### Step by step "how to" guide - August 2020
 
-Highly demanded, here it is ! A complete step by [step by step guide](/step_by_step_guide.mkd) with everything you need to know.
+Highly demanded, here it is ! A complete [step by step guide](/step_by_step_guide.mkd) with everything you need to know.
 
 #### BDM Project - March/June 2020
 

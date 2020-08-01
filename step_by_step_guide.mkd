@@ -14,16 +14,16 @@
 
 Here are the different steps to follow to achieve a proper CSL conversion of your S54 E46 M3 :
 
-[1. MSS54 to MSS54HP conversion. If you have a HP version, go to step 2](#1.-MSS54-to-MSS54HP-conversion.-If-you-have-a-HP-version,-go-to-step-2)  
-[2. BDM port headers soldering](#2.-BDM-port-headers-soldering)  
-[3. BDM tool installation](#3.-BDM-tool-installation)  
-[4. CSL Binary selection](#4.-CSL-Binary-selection)  
-[5. VIN coding](#5.-VIN-coding)  
-[6. DME 12V supply](#6.-DME-12V-supply)  
-[7. Flashing your Binary](#7.-Flashing-your-Binary)  
-[8. DME test & check](#8.-DME-test-&-check)  
-[9. DME Options !](#9.-DME-Options-!)  
-[10. EWS alignment](#10.-EWS-alignment)  
+[1. MSS54 to MSS54HP conversion. If you have a HP version, go to step 2](#1-MSS54-to-MSS54HP-conversion-If-you-have-a-HP-version-go-to-step-2)  
+[2. BDM port headers soldering](#2-BDM-port-headers-soldering)  
+[3. BDM tool installation](#3-BDM-tool-installation)  
+[4. CSL Binary selection](#4-CSL-Binary-selection)  
+[5. VIN coding](#5-VIN-coding)  
+[6. DME 12V supply](#6-DME-12V-supply)  
+[7. Flashing your Binary](#7-Flashing-your-Binary)  
+[8. DME test & check](#8-DME-test-&-check)  
+[9. DME Options !](#9-DME-Options-)  
+[10. EWS alignment](#10-EWS-alignment)  
 
 
 ### 1. MSS54 to MSS54HP conversion. If you have a HP version, go to step 2
