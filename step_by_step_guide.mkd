@@ -64,14 +64,14 @@ Write it down for later.
 ### 4. CSL Binary selection
 
 Every binary has a virgin EWS, which means you can synchronize your EWS without any problem.  
-Every supplied binaries are based on [ZB7837328_SW7837329_Std_EOBD.bin](ZB7837328_SW7837329_Std_EOBD.bin) (Stock CSL, Euro spec, ODB features)
+Every supplied binaries are based on [ZB7837328_SW7837329_Std_EOBD.bin](/CSL_full_binary_dump/ZB7837328_SW7837329_Std_EOBD.bin) (Stock CSL, Euro spec, ODB features)
 
 | MSS54 / MSS54HP | Camshafts | Link |
 |----------|-----------|----------------------------------------------|
-|  Non HP  |  M3 Stock | [download](ZB7837328_stock_M3_cams_non_hp_baro_&_DTC151.bin) |
-|  Non HP  |  CSL      | [download](ZB7837328_CSL_cams_non_hp_baro_&_DTC151.bin) |
-|    HP    |  M3 Stock | [download](ZB7837328_stock_M3_cams.bin) |
-|    HP    |  CSL      | [download](ZB7837328_CSL_cams.bin) |
+|  Non HP  |  M3 Stock | [download](/CSL_full_binary_dump/ZB7837328_stock_M3_cams_non_hp_baro_&_DTC151.bin) |
+|  Non HP  |  CSL      | [download](/CSL_full_binary_dump/ZB7837328_CSL_cams_non_hp_baro_&_DTC151.bin) |
+|    HP    |  M3 Stock | [download](/CSL_full_binary_dump/ZB7837328_stock_M3_cams.bin) |
+|    HP    |  CSL      | [download](/CSL_full_binary_dump/ZB7837328_CSL_cams.bin) |
 
 Current VIN : WBSBL12345AB12345
 
