@@ -21,7 +21,7 @@ Here are the different steps to follow to achieve a proper CSL conversion of you
 [5. VIN coding](#5-VIN-coding)  
 [6. DME 12V supply](#6-DME-12V-supply)  
 [7. Flashing your Binary](#7-Flashing-your-Binary)  
-[8. DME test & check](#8-DME-test-&-check)  
+[8. DME test & check](#8-DME-test--check)  
 [9. DME Options !](#9-DME-Options-)  
 [10. EWS alignment](#10-EWS-alignment)  
 
