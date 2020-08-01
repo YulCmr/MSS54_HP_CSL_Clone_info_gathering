@@ -16,6 +16,8 @@ AM29F200BB x 2
 
 For a CSL conversion, you **MUST** change these eeproms, csl binary will **NOT** fit into these.
 
+
+
 ## MSS54HP/MSS54HP_CSL
 
 ![AM29F400BB](/pictures/AM29F400BB.jpeg)
@@ -36,7 +38,7 @@ OEM are **55-60**
 
 ![speed](/pictures/eeprom_speeds.png)
 
-You will find SI & SE, OEM seem to be SE, when possible prefer **SE** (extended temperature range for automotive purpose
+You will find SI & SE, OEM seem to be SI, if possible prefer **SE** (extended temperature range for automotive purpose)
 
   ![temp](/pictures/eeprom_temps.png)
 

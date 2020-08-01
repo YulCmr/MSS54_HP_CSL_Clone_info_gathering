@@ -56,7 +56,7 @@ If you only wants to flash binaries using BDM, do as follows :
 
 Grounds are **common**, you only need to wire one of them.
 
-If you want to be able to use your CAN K-line cable to use INPA or ecuworx or another software, you will need to add 2 additional 12V power supplies (to be confirmed) and the k-line pin as follows :
+If you want to be able to use your CAN K-line cable to use INPA or ecuworx or another software, you will need to add 1 additional 12V power supplies and the k-line pin as follows :
 
 ![pinout](/pictures/pinout_kline.png)
 

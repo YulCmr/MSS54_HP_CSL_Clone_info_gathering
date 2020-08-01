@@ -1,0 +1,172 @@
+# Step by step guide for a MSS54/HP to MSS54HP_CSL Conversion
+
+**Requirements :**
+- 1x MSS54 or MSS54HP
+  - If you have a MSS54, you need some more parts :
+      - 2x [7.15kΩ 0603 SMD resistors](/hardware_modifications/MAP_Sensor.mkd)  
+      - 2x [AM29F400 eeproms](/hardware_modifications/eeprom_chips.mkd)
+- 1x Windows computer (7/8/10)
+- 1x BDM Tool
+- 2x 10 pins smd headers, 1.27mm step (supplied with BDM Tool)
+- 1x USB to mini-USB cable (to plug your tool to your computer)
+- 12V power supply and a homemade or salvaged ECU hardness to powerup your ECU on bench (pinout described later)
+- K+DCAN ODB Cable
+
+Here are the different steps to follow to achieve a proper CSL conversion of your S54 E46 M3 :
+
+[1. MSS54 to MSS54HP conversion. If you have a HP version, go to step 2](#1.-MSS54-to-MSS54HP-conversion.-If-you-have-a-HP-version,-go-to-step-2)  
+[2. BDM port headers soldering](#2.-BDM-port-headers-soldering)  
+[3. BDM tool installation](#3.-BDM-tool-installation)  
+[4. CSL Binary selection](#4.-CSL-Binary-selection)  
+[5. VIN coding](#5.-VIN-coding)  
+[6. DME 12V supply](#6.-DME-12V-supply)  
+[7. Flashing your Binary](#7.-Flashing-your-Binary)  
+[8. DME test & check](#8.-DME-test-&-check)  
+[9. DME Options !](#9.-DME-Options-!)  
+[10. EWS alignment](#10.-EWS-alignment)  
+
+
+### 1. MSS54 to MSS54HP conversion. If you have a HP version, go to step 2
+
+**Requires some good soldering skills and a hot air station. If you never did this before, ask for an electronic shop to do this**
+
+non-HP to HP conversion requires 2 modifications :
+- 2 resistors to change
+- 2 eeproms to change
+
+| MSS54 doesn't supply 5V for the MAP sensor, so you need to change the two red resistors below. For more details about resistors, check [this page](/hardware_modifications/MAP_Sensor.mkd) | non-HP eeproms are no big enough, you need to swap the 2x AM29F200 with 2x AM29F400. For more details about eeproms and part numbers, check [this page](/hardware_modifications/eeprom_chips.mkd)|
+|-|-|
+| ![map_res](/pictures/map_resistors.jpg) | ![eeproms](/pictures/eeproms_dme.jpg) |
+
+
+### 2. BDM port headers soldering
+
+**Requires some good soldering skills and a hot air station. If you never did this before, ask for an electronic shop to do this**
+
+To plug the BDM Tool to your DME, you need to solder 2 BDM Port headers, 1 for each CPU.
+
+![map_res](/pictures/bdm_ports.jpg)
+
+### 3. BDM tool installation
+
+First, plug the BDM tool to your computer, then [Download BDM Utility](/tools/BDM_UTILITY.exe) and [Download BDM Drivers](/tools/en.stsw-link009.zip) (ST Virtual COM Port Drivers).
+
+Install the drivers... When done, unplug then plug back again the BDM Tool.
+
+If you have multiple COM port on your computer, you may need to find the good one in your "Device Manager". Look after "STMicroelectronics STLink Virtual COM Port (COM**X**)" where **X** is the COM Port number you need.
+
+![vcp](/pictures/vcp.jpg)
+
+Write it down for later.
+
+~~[Download BDM Utility (test revision only, only for Christian)](/tools/BDM_UTILITY_test_fix.exe)~~  
+
+### 4. CSL Binary selection
+
+Every binary has a virgin EWS, which means you can synchronize your EWS without any problem.  
+Every supplied binaries are based on [ZB7837328_SW7837329_Std_EOBD.bin](ZB7837328_SW7837329_Std_EOBD.bin) (Stock CSL, Euro spec, ODB features)
+
+| MSS54 / MSS54HP | Camshafts | Link |
+|----------|-----------|----------------------------------------------|
+|  Non HP  |  M3 Stock | [download](ZB7837328_stock_M3_cams_non_hp_baro_&_DTC151.bin) |
+|  Non HP  |  CSL      | [download](ZB7837328_CSL_cams_non_hp_baro_&_DTC151.bin) |
+|    HP    |  M3 Stock | [download](ZB7837328_stock_M3_cams.bin) |
+|    HP    |  CSL      | [download](ZB7837328_CSL_cams.bin) |
+
+Current VIN : WBSBL12345AB12345
+
+The MSS54 / MSS54HP column indicates if you use a legit HP, or a converted MSS54 as barometer and injection drivers are different between the two versions and need to be coded.
+
+### 5. VIN coding
+
+Download my [VIN Changer](/tools/VIN_UTILITY.exe) software.
+
+![vin_location](/pictures/VIN_Changer.jpg)
+
+Open VIN Changer then load your selected binary file. Enter your new VIN then hit "Write VIN".  
+You can double check that your Current VIN is now your new VIN with the "Re-Check VIN" button.
+
+### 6. DME 12V supply
+
+The DME supplies power to the BDM Tool, and not the contrary.
+You have two options here :
+
+1. Basic power supply, you need 2x 12V and 1x GND (all GND are common, 1 is enough). This only allows you to power up your DME and use the BDM tool.  
+
+![pinout](/pictures/pinout_bdm.png)
+
+2. Advanced power supply, you need 3x 12V, 1x GND and 1x KLINE. This allows you to connect your DME to a K+DCAN ODB Cable, on bench. It's a convenient way to connect your DME to INPA after flashing it, and modify some parameters with Martyn's [MSS5x Binary Modification Tool](https://www.ecuworx.co.uk/downloads/).
+
+![pinout](/pictures/pinout_kline.png)
+
+I would personally advice the 2nd way. It allows you to check that your VIN is good in INPA, do some modifications in Martyn's software like "Flap delete", "Cruise Control enable", etc, etc... and check that mssflasher identifies your DME as a 32500 unit (MSS54HP_CSL)
+
+If you're confident enough and don't mind checking all this while DME is in car, then first way is fine for you.
+
+### 7. Flashing your Binary
+
+Plug your BDM Tool to your DME, master side first (Doesn't actually matter but ... Hey, it's master side, deserves to be the first) Check for the red wire orientation.
+
+![DME_Detail](/pictures/DME_Detail.jpg)
+
+Fire up the "BDM Utility" you downloaded on step 3. Choose the right COM port (you wrote down on step 3) then click "Connect".
+
+**TURN ON YOUR 12V Power Supply**
+
+DME identification :
+
+Hit the "**Enable BDM Mode**" button, which should quickly turn green, then hit the "**Read EEPROM ID**" which should also turn green while displaying which EEPROM model it detects. (If HP eeproms, AM29F400)
+
+*If you use a HP version, you can dump your original binaries before erasing and flashing new binary. Each dump creates a "MSS5x_dump.bin" file. Don't forget to rename it after dumping content of master or slave as a new dump OVERWRITES the current "MSS5x_dump.bin" file.*
+
+Flashing !
+
+1. Hit "**Erase Memory**" button then wait. after ~5sec "Enable BDM Mode" should turn red.
+2. Hit "**Enable BDM Mode**" again and wait for it to turn green.
+3. Select the "**master**" side on the right of the screen
+4. Hit "**Write Memory**" button. A window should ask for your binary file. Choose your file then "OK".
+5. NOW WAIT ! Write process is about 2mn45sec long. Find a beer. When done, "Enable BDM Mode" should turn red.
+6. Disconnect the BDM tool from the Master side
+7. Connect the BDM Tool to the slave side
+8. Hit "**Erase Memory**" button then wait. after ~5sec "Enable BDM Mode" should turn red.
+9. Hit "**Enable BDM Mode**" again and wait for it to turn green.
+10. Select the "**slave**" side on the right of the screen
+11. Hit "**Write Memory**" button. A window should ask for your binary file. Choose your file then "OK".
+12. NOW WAIT ! Write process is about 2mn45sec long. Finish your beer. When done, "Enable BDM Mode" should turn red.
+13. Disconnect the BDM tool from the Slave side
+
+**TURN OFF YOUR 12V Power Supply**
+
+### 8. DME test & check
+
+As said before, I would advice to wire the kline out of your DME to test everything on table. If you don't want to, go to step 9.
+
+I like to check that my VIN is ok in INPA, also is my software revision : ZB7837328 -> Version 7.837.329
+I also like to check that mssflasher identifies my DME as a 32500 unit, which leads to a correct EEPROM communication.
+
+### 9. DME Options !
+
+**Facultative step**
+
+For this task I would advice to download Martyn's [MSS5x Binary Modification Tool](https://www.ecuworx.co.uk/downloads/). It's around 25$ but does a great job.
+
+This step is for :
+- Enabling cruise Control
+- SAP delete
+- Vmax limiter Disable
+- Final ratio
+- Cat delete
+- etc...
+
+If you already bought the licence for you current ECU, you will likely need to buy it again.
+
+### 10. EWS alignment
+
+Install your DME in your car, then fire up INPA.
+
+Select E46 chassis, then go in the "EWS 3 start value synchronize", usually on the right of the screen, then select "EWS start value synch". Should display a message -> "Startwert verstanden und akzeptiert"
+
+Turn off ignition, wait 5sec, then try to start your engine. Check for any remaining EWS error codes in INPA, and if you have one, clear it.
+
+As a complement, you can use this YouTube video : [How to Synchronize or Align a BMW ECU DME to the EWS CAS security system ISN
+](https://www.youtube.com/watch?v=dSFvmDYvz4Y)

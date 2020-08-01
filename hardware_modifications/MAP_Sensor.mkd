@@ -10,7 +10,7 @@ Hardware modifications are required on the PCB to accept the MAP sensor.
 
 ![map_res](/pictures/map_resistors.jpg)
 
-You **MUST** change the 2 red resistors :  7.15 kΩ
+You **MUST** change the 2 red resistors :  **7.15 kΩ 0603 SMD Resistors**
 
 You can change the 2 yellow but terra says "They don't appear to effect anything" : 10 kΩ on the MSS54HP, 1 kΩ on the non-HP.
 
