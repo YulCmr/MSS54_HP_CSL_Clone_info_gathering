@@ -12,7 +12,7 @@ Buyers section :
 CPUs : SC4158008BVFT16
 - Mask : 3F48H
 
-EEPROMs : AM28F200
+EEPROMs : AB28F200
 
 ![mss50](/pictures/mss50.jpeg)
 
