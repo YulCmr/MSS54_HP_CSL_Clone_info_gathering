@@ -20,12 +20,10 @@ EEPROMs : AB28F200
 
 ![pinout](/pictures/pinout_bdm_mss50.png)
 
-Pin 26 : Vbat
-Pin 54 : DME Relay
-Pin 60 : Programming Voltage
-
-Pin 28 : GND
-
+Pin 26 : Vbat  
+Pin 54 : DME Relay  
+Pin 60 : Programming Voltage  
+Pin 28 : GND  
 Pin 88 : K-line
 
 ### DME Connection
