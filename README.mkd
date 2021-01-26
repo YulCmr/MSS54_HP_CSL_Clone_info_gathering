@@ -14,7 +14,7 @@ Highly demanded, here it is ! A complete [step by step guide](/step_by_step_guid
 
 #### BDM Project - March/June 2020
 
-###### MSS52/54
+##### MSS52/54
 
 This part is dedicated to my BDM project. I needed to flash complete CSL Software into a DME to convert the DME into a 32500 Unit, not a weird 32300 with CSL software.
 
@@ -24,7 +24,7 @@ You can find here everything you need to use my BDM : infos, software, drivers, 
 
 BDM is for sale at 120 euros + shipping
 
-###### Work in progress, MSS50
+##### Work in progress, MSS50
 
 [BDM project - MSS50](/hardware_modifications/BDM_mss50.mkd)
 
