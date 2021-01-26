@@ -28,8 +28,6 @@ Pin 88 : K-line
 
 ### DME Connection
 
-Don't forget, you need to erase and write you binary twice, once per side, Master & Slave.
-
 Plug ribbon cable as follows :
 
 ![DME_Detail](/pictures/DME_Detail_mss50.png)
