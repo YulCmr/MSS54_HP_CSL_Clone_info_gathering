@@ -1,0 +1,29 @@
+# BDM Documentation
+
+Buyers section :
+[Go to Software and guides](#Buyers-Ressources) (Windows 7/8/10)
+
+### BDM Connector
+
+![BDM_connector](/pictures/BDM_connector.jpg)
+
+### PCB
+
+CPUs : SC4158008BVFT16
+- Mask : 3F48H
+
+EEPROMs : AM28F200
+
+![mss50](/pictures/mss50.jpeg)
+
+### DME Power supply
+
+![pinout](/pictures/pinout_bdm_mss50.png)
+
+### DME Connection
+
+Don't forget, you need to erase and write you binary twice, once per side, Master & Slave.
+
+Plug ribbon cable as follows :
+
+![DME_Detail](/pictures/DME_Detail_mss50.png)
