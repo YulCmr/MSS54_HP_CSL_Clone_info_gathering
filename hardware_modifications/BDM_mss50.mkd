@@ -9,10 +9,8 @@ Buyers section :
 
 ### PCB
 
-CPUs : SC4158008BVFT16
-- Mask : 3F48H
-
-EEPROMs : AB28F200
+CPUs : Motorola SC4158008BVFT16 (Mask : 3F48H)  
+EEPROMs : Intel AB28F200
 
 ![mss50](/pictures/mss50.jpeg)
 
