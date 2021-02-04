@@ -88,6 +88,8 @@ Clear ISN (Allow EWS Alignement) :
 
 ![AIF](/pictures/AIF.jpeg)
 
+For MSS50 SMG to Manual conversion, you can use this [software](/tools/ISN_AIF_Copy.exe) to copy AIF and ISN from SMG dump, into Manual binary (do not use with MSS54, still not compatible)
+
 ## Flash Counter
 
 0x4800 : Flash counter on each 512K bank, Must be 0xFF (or 60 x 16bits). Each flash toggle 0xFFFF to 0x0000
