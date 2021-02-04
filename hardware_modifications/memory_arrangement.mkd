@@ -57,6 +57,8 @@ Compatible with MSS50, MSS52 & MSS54 binary files (Complete, not partial)
 
 ## ISN (EWS)
 
+### MSS54
+
 Bin located in "CSL_full_binary_dump" seem to already have a clear ISN. Don't bother with ISN clearing if you're using a Full bin from this repo.
 
 Clear ISN (Allow EWS Alignement) :
@@ -64,6 +66,23 @@ Clear ISN (Allow EWS Alignement) :
 - single word repeated 3 times. Set them to "0xFFFF" (word is 16bits)
 
 **Slave eeprom 0x3EF4-0x7FFFF means, 0x43EF4 to 0x47FFF in NON-HP Full BIN, 0x83EF4 to 0x87FFF in HP Full BIN**
+
+### MSS50
+
+**ISN space : 0x13060 (Size 25)**
+- EWS Key : 0x1306a (size 4)
+  - Data format : Convert EWS Key to decimal, then write it in ascii.  
+    For example : ews key = 0x84a -> 0d2122 -> Ascii = 2122   
+    You need to write in your HEX editor : (lsb) 0x32, 0x31, 0x32, 0x32 (msb)
+
+**AIF space : 0x1309e (Size 46)**
+- VIN (encoded) : 0x1309e (Size 13)
+- Software number : 0x130af (size 3)
+- Office number : 0x130b5 (size 3)
+- Assembly id number : 0x130b9 (size 3)
+- Program number : 0x130c8 (size 3)
+- Dealer number : 0x130c4 (size 1 ?)
+- Kilometer : ??
 
 ## Flash Counter
 
