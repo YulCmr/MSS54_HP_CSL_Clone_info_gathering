@@ -75,6 +75,8 @@ Clear ISN (Allow EWS Alignement) :
     For example : ews key = 0x84a -> 0d2122 -> Ascii = 2122   
     You need to write in your HEX editor : (lsb) 0x32, 0x31, 0x32, 0x32 (msb)
 
+![ISN](/pictures/ISN.jpeg)
+
 **AIF space : 0x1309e (Size 46)**
 - VIN (encoded) : 0x1309e (Size 13)
 - Software number : 0x130af (size 3)
@@ -83,6 +85,8 @@ Clear ISN (Allow EWS Alignement) :
 - Program number : 0x130c8 (size 3)
 - Dealer number : 0x130c4 (size 1 ?)
 - Kilometer : ??
+
+![AIF](/pictures/AIF.jpeg)
 
 ## Flash Counter
 
