@@ -8,11 +8,11 @@ After heavily researching for infos all over internet and digging into old motor
 
 ## Actual CSL conversion focused writing
 
-#### Step by step "how to" guide - August 2020
+#### Step by step "how to" guide
 
 Highly demanded, here it is ! A complete [step by step guide](/step_by_step_guide.mkd) with everything you need to know.
 
-#### BDM Project - March/June 2020
+#### BDM Project
 
 ##### MSS52/54
 
@@ -28,7 +28,7 @@ BDM is for sale at 120 euros + shipping
 
 [BDM project - MSS50](/hardware_modifications/BDM_mss50.mkd)
 
-#### Sensor Mounting & Wiring - July/... 2020
+#### Sensor Mounting & Wiring
 
 [MAP Sensor](/mounting/Map_mounting.mkd)
 
@@ -38,11 +38,11 @@ BDM is for sale at 120 euros + shipping
 
 Every information gathered here come from multiple sources: M3Forum.net, M3cutters, E46Fanatics & Github and a lot of research.
 
-#### CSL Software Versions detail + dump - Feb/March 2020
+#### CSL Software Versions detail + dump
 
 [CSL software versions & Full binary dumps](/CSL_full_binary_dump/csl_versions.mkd)
 
-#### DME Hardware Modifications - Feb/March 2020
+#### DME Hardware Modifications
 
 Here are all needed modifications on MSS54 and MSS54HP to achieve a CSL Clone conversion
 
