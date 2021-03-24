@@ -20,7 +20,7 @@ This part is dedicated to my BDM project. I needed to flash complete CSL Softwar
 
 You can find here everything you need to use my BDM : infos, software, drivers, etc.
 
-[BDM project - Details, Software, etc](/hardware_modifications/BDM.mkd)
+[BDM project - MSS54](/hardware_modifications/BDM.mkd)
 
 BDM is for sale at 120 euros + shipping
 

@@ -20,7 +20,8 @@ EEPROMs : Intel AB28F200
 
 Pin 26 : Vbat  
 Pin 54 : DME Relay  
-Pin 60 : Programming Voltage  
+Pin 56 : Ignition
+Pin 60 : Programming Voltage (not useful if you only want to read DME)
 Pin 28 : GND  
 Pin 88 : K-line
 
@@ -29,3 +30,13 @@ Pin 88 : K-line
 Plug ribbon cable as follows :
 
 ![DME_Detail](/pictures/DME_Detail_mss50.png)
+
+### Bootloader unlock
+
+Be careful, this modification will unlock secured eeprom areas.
+
+![photo_1](/pictures/bootloader_unlock_1.jpg)
+
+![photo_2](/pictures/bootloader_unlock_2.jpg)
+
+![photo_3](/pictures/bootloader_unlock_3.jpg)
