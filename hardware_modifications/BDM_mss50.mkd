@@ -18,25 +18,84 @@ EEPROMs : Intel AB28F200
 
 ![pinout](/pictures/pinout_bdm_mss50.png)
 
-Pin 26 : Vbat  
-Pin 54 : DME Relay  
-Pin 56 : Ignition
-Pin 60 : Programming Voltage (not useful if you only want to read DME)
+Pin 26 : Vbat  (12V)  
+Pin 54 : DME Relay  (12V)  
+Pin 56 : Ignition  (12V)  
+Pin 60 : Programming Voltage (12V, not useful if you only want to read DME)    
 Pin 28 : GND  
 Pin 88 : K-line
 
+**DO NOT POWER ON NOW**
+
 ### DME Connection
+**Requires some good soldering skills and a hot air station. If you never did this before, ask for an electronic shop to do this**
 
-Plug ribbon cable as follows :
+To plug the BDM Tool to your DME, you need to solder 2 BDM Port headers, 1 for each CPU.
 
-![DME_Detail](/pictures/DME_Detail_mss50.png)
+![map_res](/pictures/bdm_ports_mss50.jpg)
 
 ### Bootloader unlock
 
-Be careful, this modification will unlock secured eeprom areas.
+Be careful, this modification will unlock secured eeprom areas, but will allow to re-write a corrupted bootloader.  
+After a quick check ISN & AIF are not protected, but I need to double check as soon as I've some spare time.  
+I have developed this tool with full eeprom access as it allowed me to read/write the ENTIRE binary so I don't really know how the tool behaves without unlocking full access (+ it's a 15sec job to unlock it.)  
+Feel free to remove the jumper before plugging the DME in the car again. It's up to you as I don't own an E36 M3 3.2 and I don't know if it can affect ODB read/write process.
 
 ![photo_1](/pictures/bootloader_unlock_1.jpg)
 
 ![photo_2](/pictures/bootloader_unlock_2.jpg)
 
 ![photo_3](/pictures/bootloader_unlock_3.jpg)
+
+### Tool Installation
+
+Refer to [BDM tool installation](/step_by_step_guide.mkd#3-BDM-tool-installation) chapter in the "step by step guide" for MSS54.
+
+### BDM Tool <-> DME Connection
+
+Plug your BDM Tool to your DME, the side you want to work on. Check for the red wire orientation.
+
+**Observe MASTER/SLAVE placement !**
+
+BDM Ribbon Cable:  
+![DME_Detail](/pictures/DME_Detail_mss50.png)
+
+5V Power supply:    
+
+Use the Hook Clip to connect to the 5V output of the transistor. (Don't do it under power to avoid destroying things ... Keep things safe, these ECUs are quite expensive nowadays)
+
+| -- | -- |
+|---|---|
+| ![DME_Detail](/pictures/mss50_5v.jpeg) | ![DME_Detail](/pictures/5v.png) |
+
+
+### Using the tool
+
+If you use this tool on your stock DME, for the first time, I highly suggest you to start with master side as it contains your AIF & ISN (EWS Key)
+
+1. Connect the BDM Tool to your computer
+2. Fire up the BDM Utility executable
+3. Connect to COM port (the COM Port you wrote down few steps before)
+4. Enable BDM access
+5. Identify eeprom model
+6. Once there I'll advice you to DUMP you current DME to retrieve your EWS key. DUMP generates a file named "MSS5x_dump.bin" in the software folder. Be sure to rename it and save it in a safe place.
+
+After each ERASE/DUMP/WRITE operation you must re-enable bdm access + ID Chip.
+
+To dump your complete DME and generate a FULL BINARY:
+1. dump master, rename the file with adding "master" mention.
+2. then dump slave, add "slave" mention to your new file.
+3. Open the two files in [HXD](https://mh-nexus.de/en/hxd/).
+4. Select (CTRL+A) and copy (CTRL+C) the entire slave content
+5. Go to the end of your Master file, clic after the last value (to place the cursor there) then paste (CTRL+V)
+6. Hxd will warn you that the file size will change. Clic "ok".
+7. File -> Save as -> choose a name for your binary.
+8. You're done !
+
+If you need more informations, I advice you to take a look at the [step by step guide](/step_by_step_guide.mkd#3-BDM-tool-installation)
+
+To transfer VIN + ISN from your original DME to another binary (SMG/Manual swap, new tune, etc.), take a look at this [software](/tools/ISN_AIF_Copy.exe).
+
+- Input is the binary WITH your VIN and EWS Key (FULL Binary)
+- Output is the binary you want to flash, but which doesn't have your VIN & EWS. (FULL Binary)
+- Click go, then the output file now have correct VIN & EWS.

@@ -1,5 +1,7 @@
 # Step by step guide for a MSS54/HP to MSS54HP_CSL Conversion
 
+MSS50 informations added, you can follow the beggining of this guide to connect your DME to the tool. Then it's a matter of what you want to do of it.
+
 **Requirements :**
 - 1x MSS54 or MSS54HP
   - If you have a MSS54, you need some more parts :
@@ -49,7 +51,7 @@ To plug the BDM Tool to your DME, you need to solder 2 BDM Port headers, 1 for e
 
 ### 3. BDM tool installation
 
-First, plug the BDM tool to your computer, then [Download BDM Utility](/tools/BDM_UTILITY.exe) and [Download BDM Drivers](/tools/en.stsw-link009.zip) (ST Virtual COM Port Drivers).
+First, plug the BDM tool to your computer, then [Download BDM Utility](/tools/BDM_UTILITY_mss5x.exe) and [Download BDM Drivers](/tools/en.stsw-link009.zip) (ST Virtual COM Port Drivers).
 
 Install the drivers... When done, unplug then plug back again the BDM Tool.
 
@@ -58,8 +60,6 @@ If you have multiple COM port on your computer, you may need to find the good on
 ![vcp](/pictures/vcp.jpg)
 
 Write it down for later.
-
-~~[Download BDM Utility (test revision only, only for Christian)](/tools/BDM_UTILITY_test_fix.exe)~~  
 
 ### 4. CSL Binary selection
 
@@ -106,6 +106,10 @@ If you're confident enough and don't mind checking all this while DME is in car,
 ### 7. Flashing your Binary
 
 Plug your BDM Tool to your DME, master side first (Doesn't actually matter but ... Hey, it's master side, deserves to be the first) Check for the red wire orientation.
+
+**Observe MASTER/SLAVE placement !**
+
+#### MSS54/HP
 
 ![DME_Detail](/pictures/DME_Detail.jpg)
 
