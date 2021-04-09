@@ -94,8 +94,10 @@ To dump your complete DME and generate a FULL BINARY:
 
 If you need more informations, I advice you to take a look at the [step by step guide](/step_by_step_guide.mkd#3-BDM-tool-installation)
 
-To transfer VIN + ISN from your original DME to another binary (SMG/Manual swap, new tune, etc.), take a look at this [software](/tools/ISN_AIF_Copy.exe).
+To transfer AIF (VIN, Software version, etc) + ISN (EWS, etc) from your original DME to another binary (SMG/Manual swap, new tune, etc.), take a look at this [software](/tools/ISN_AIF_Copy.exe).
 
-- Input is the binary WITH your VIN and EWS Key (FULL Binary)
-- Output is the binary you want to flash, but which doesn't have your VIN & EWS. (FULL Binary)
-- Click go, then the output file now have correct VIN & EWS.
+- Input is the binary WITH your AIF and ISN (FULL Binary)
+- Output is the binary you want to flash, but which doesn't have your AIF & ISN. (FULL Binary)
+- Click go, then the output file now have correct AIF & ISN.
+
+If you want to only transfer the VIN & ISN (auto-manual swap) and not the entire AIF, you must tick the checkbox in the software before copying.
