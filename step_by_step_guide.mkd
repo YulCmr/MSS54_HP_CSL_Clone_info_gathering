@@ -66,16 +66,34 @@ Write it down for later.
 Every binary has a virgin EWS, which means you can synchronize your EWS without any problem.  
 Every supplied binaries are based on [ZB7837328_SW7837329_Std_EOBD.bin](/CSL_full_binary_dump/ZB7837328_SW7837329_Std_EOBD.bin) (Stock CSL, Euro spec, ODB features)
 
-| MSS54 / MSS54HP | Camshafts | Link |
+Pre-modified binaries appears to cause err 157 issue which doesn't affect engine management but throws an error in diag softwares. I would advice to manually modify your binary for now. (As long as I don't provide new "ready to flash" binaries)
+
+After writing the complete CSL binary (ZB787329), read the partial file using bmwflash.
+
+- **If you have stock M3 cams installed, follow this :**
+
+>VANOS offsets: at 0x1802 change "00 1E" to "FF EC", at 0x1BB6 change "FF EC" to "00 0A"
+  - This is applicable only if running stock cams. This is not required if running CSL cams and will be incorrect if running any other type of cams
+
+- **If you use a converted non HP (you use stock barometer and different drivers), follow this :**
+
+>- Pressure scaling: at 0xC476 change "D3 1C" to "C2 5F"
+  - MSS54 have a different barometric pressure sensor than HPs, this changes the sensor's scaling to have the CSL software work correctly with the non-HP sensor.
+
+>- Suppress injector error 151: search for 97282803020203000102032801 and zero out the full string.
+    - There is a hardware injector driver difference between non-HP and HP DMEs, meaning that this conversion will result in an injector driver error. However, these drivers still work fine, so suppressing the error is necessary if you don't want to have it listed constantly.
+
+
+<!-- | MSS54 / MSS54HP | Camshafts | Link |
 |----------|-----------|----------------------------------------------|
 |  Non HP  |  M3 Stock | [download](/CSL_full_binary_dump/ZB7837328_stock_M3_cams_non_hp_baro_&_DTC151.bin) |
 |  Non HP  |  CSL      | [download](/CSL_full_binary_dump/ZB7837328_CSL_cams_non_hp_baro_&_DTC151.bin) |
 |    HP    |  M3 Stock | [download](/CSL_full_binary_dump/ZB7837328_stock_M3_cams.bin) |
-|    HP    |  CSL      | [download](/CSL_full_binary_dump/ZB7837328_CSL_cams.bin) |
+|    HP    |  CSL      | [download](/CSL_full_binary_dump/ZB7837328_CSL_cams.bin) | -->
 
 Current VIN : WBSBL12345AB12345
 
-The MSS54 / MSS54HP column indicates if you use a legit HP, or a converted MSS54 as barometer and injection drivers are different between the two versions and need to be coded.
+<!-- The MSS54 / MSS54HP column indicates if you use a legit HP, or a converted MSS54 as barometer and injection drivers are different between the two versions and need to be coded. -->
 
 ### 5. VIN coding
 
