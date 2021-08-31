@@ -77,10 +77,10 @@ After writing the complete CSL binary (ZB787329), read the partial file using bm
 
 - **If you use a converted non HP (you use stock barometer and different drivers), follow this :**
 
->- Pressure scaling: at 0xC476 change "D3 1C" to "C2 5F"
+>Pressure scaling: at 0xC476 change "D3 1C" to "C2 5F"  
   >- MSS54 have a different barometric pressure sensor than HPs, this changes the sensor's scaling to have the CSL software work correctly with the non-HP sensor.
 
->- Suppress injector error 151: search for 97282803020203000102032801 and zero out the full string.
+>Suppress injector error 151: search for 97282803020203000102032801 and zero out the full string.  
     >- There is a hardware injector driver difference between non-HP and HP DMEs, meaning that this conversion will result in an injector driver error. However, these drivers still work fine, so suppressing the error is necessary if you don't want to have it listed constantly.
 
 
