@@ -75,7 +75,7 @@ After writing the complete CSL binary (ZB787329), read the partial file using bm
 >VANOS offsets: at 0x1802 change "00 1E" to "FF EC", at 0x1BB6 change "FF EC" to "00 0A"
   >- This is applicable only if running stock cams. This is not required if running CSL cams and will be incorrect if running any other type of cams
 
-- **If you use a converted non HP (you use stock barometer and different drivers), follow this :**
+- **If you use a converted non HP (you use stock barometer and different drivers), follow this. Alternatively I would advice to use Ecuworx software which handles barometer scaling & DTC151 removal instead of messing with hex file :**
 
 >Pressure scaling: at 0xC476 change "D3 1C" to "C2 5F"  
   >- MSS54 have a different barometric pressure sensor than HPs, this changes the sensor's scaling to have the CSL software work correctly with the non-HP sensor.
