@@ -73,15 +73,15 @@ After writing the complete CSL binary (ZB787329), read the partial file using bm
 - **If you have stock M3 cams installed, follow this :**
 
 >VANOS offsets: at 0x1802 change "00 1E" to "FF EC", at 0x1BB6 change "FF EC" to "00 0A"
-  - This is applicable only if running stock cams. This is not required if running CSL cams and will be incorrect if running any other type of cams
+  >- This is applicable only if running stock cams. This is not required if running CSL cams and will be incorrect if running any other type of cams
 
 - **If you use a converted non HP (you use stock barometer and different drivers), follow this :**
 
 >- Pressure scaling: at 0xC476 change "D3 1C" to "C2 5F"
-  - MSS54 have a different barometric pressure sensor than HPs, this changes the sensor's scaling to have the CSL software work correctly with the non-HP sensor.
+  >- MSS54 have a different barometric pressure sensor than HPs, this changes the sensor's scaling to have the CSL software work correctly with the non-HP sensor.
 
 >- Suppress injector error 151: search for 97282803020203000102032801 and zero out the full string.
-    - There is a hardware injector driver difference between non-HP and HP DMEs, meaning that this conversion will result in an injector driver error. However, these drivers still work fine, so suppressing the error is necessary if you don't want to have it listed constantly.
+    >- There is a hardware injector driver difference between non-HP and HP DMEs, meaning that this conversion will result in an injector driver error. However, these drivers still work fine, so suppressing the error is necessary if you don't want to have it listed constantly.
 
 
 <!-- | MSS54 / MSS54HP | Camshafts | Link |
